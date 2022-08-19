@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>PyScript Random Generator</title>
+
+    <!-- <py-env> - paths: - ./main.py </py-env>
+    <py-env>
+    - random
+    </py-env> -->
+  </head>
+  <body style="background-color: rgb(36, 36, 54); color: rgb(255, 230, 0)">
+    
+    <main>
+      <section>
+        <div class="text-center w-full mb-8">
+          <h1 class="text-3xl font-bold text-slate-800 uppercase tracking-tight">
+            Random Quote Generator
+          </h1>
+          <br><br>
+          <py-script src="./main.py"></py-script>
+        
+          <div class="container h-screen flex flex-col items-center justify-center">
+            <div id="output" class="text-3xl"></div>
+            <button id="next" class="mt-4 p-2 text-white bg-blue-600 rounded" pys-onClick="next_quote">ENTER</button>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
